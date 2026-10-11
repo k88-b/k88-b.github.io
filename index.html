@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="google-site-verification" content="k0OjAvbKI0V1P9FlSJxgnUNVL0TChlUqkM9k_g7p3N8" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>k88 — Konstantin Belyanin</title>
+<meta name="description" content="Olympiad math, number theory, Lean 4 and Python deobfuscation. Personal site of Konstantin Belyanin (k88).">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23000%22/><text x=%2250%22 y=%2272%22 font-size=%2260%22 text-anchor=%22middle%22 fill=%22%232ac3de%22 font-family=%22monospace%22 font-weight=%22700%22>88</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #000000;
+    --fg: #d4d4d4;
+    --dim: #7a7a7a;
+    --line: #2a2a2a;
+    --accent: #2ac3de;
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--bg); }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 15px/1.7 "JetBrains Mono", ui-monospace, "Iosevka", "SFMono-Regular", Menlo, Consolas, monospace;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 80px 24px 56px; }
+
+  a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; }
+  a:hover { border-bottom-color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  ::selection { background: var(--accent); color: #000; }
+
+  h1 { font-size: 2.4rem; line-height: 1.15; margin: 0 0 12px; font-weight: 700; letter-spacing: -0.02em; }
+  .tagline { color: var(--dim); margin: 0 0 48px; max-width: 56ch; }
+
+  section { margin: 0 0 44px; }
+  h2 { font-size: 1rem; font-weight: 700; margin: 0 0 14px; }
+  h2::before { content: "# "; color: var(--dim); font-weight: 400; }
+
+  dl { margin: 0; display: grid; grid-template-columns: 9ch 1fr; gap: 2px 24px; }
+  dt { color: var(--dim); }
+  dd { margin: 0; }
+
+  .projects { list-style: none; margin: 0; padding: 0; }
+  .projects li { padding: 14px 0; border-top: 1px solid var(--line); }
+  .projects li:last-child { border-bottom: 1px solid var(--line); }
+  .projects .name { font-weight: 700; }
+  .projects p { margin: 2px 0 0; color: var(--dim); }
+  .projects .more { margin-top: 2px; }
+
+  .tags { display: flex; flex-wrap: wrap; gap: 8px 10px; margin: 0; padding: 0; list-style: none; }
+  .tags li { border: 1px solid var(--line); border-radius: 4px; padding: 0 10px; }
+
+  footer { color: var(--dim); font-size: .85rem; margin-top: 56px; }
+
+  @media (max-width: 560px) {
+    main { padding-top: 48px; }
+    h1 { font-size: 1.9rem; }
+    dl { grid-template-columns: 1fr; gap: 0; }
+    dd { margin-bottom: 8px; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <h1>Konstantin Belyanin<br>a.k.a. k88</h1>
+  <p class="tagline">I write proofs in Lean 4, solve olympiad problems, study number theory and take obfuscated Python apart.</p>
+
+  <section>
+    <h2>interests</h2>
+    <dl>
+      <dt>math</dt>    <dd>olympiad mathematics</dd>
+      <dt></dt>        <dd>number theory</dd>
+      <dt>proofs</dt>  <dd>Lean 4</dd>
+      <dt>reverse</dt> <dd>Python 3 deobfuscation</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>now</h2>
+    <p style="margin:0">Preparing for math olympiads.</p>
+  </section>
+
+  <section>
+    <h2>projects</h2>
+    <ul class="projects">
+      <li>
+        <a class="name" href="https://adam.math.hhu.de/#/g/k88-b/NumberTheoryGame">Number Theory Game</a>
+        <p>An interactive Lean 4 game where you prove number theory facts step by step: 6 worlds, 52 levels. Hosted on the Lean Game Server and featured on its main page. Available in English and Russian. I added Russian support to the platform, and this is the only game there that has it.</p>
+        <p class="more"><a href="https://leanprover.zulipchat.com/#narrow/channel/113488-general/topic/Number.20Theory.20Game/">discussion on Zulip</a> · <a href="https://github.com/k88-b/NumberTheoryGame">source</a> · <a href="https://github.com/k88-b/NumberTheoryGame_solutions">solutions</a></p>
+      </li>
+      <li>
+        <a class="name" href="https://github.com/k88-b/lean-nt">lean-nt</a>
+        <p>Lean 4 proofs of olympiad number theory problems.</p>
+      </li>
+      <li>
+        <a class="name" href="https://github.com/k88-b/88deobfuscator">88deobfuscator</a>
+        <p>A Python 3 deobfuscator. There is also a <a href="https://github.com/k88-b/88deobfuscator-batch">batch version</a> for processing many files at once.</p>
+      </li>
+      <li>
+        <a class="name" href="https://github.com/k88-b/dotfiles">dotfiles</a>
+        <p>My SwayFX, Helix and terminal configuration.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>setup</h2>
+    <dl>
+      <dt>hardware</dt><dd>ThinkPad T480 + T14 Gen 1</dd>
+      <dt>distro</dt>  <dd>Artix Linux, runit</dd>
+      <dt>wm</dt>      <dd>SwayFX</dd>
+      <dt>editor</dt>  <dd>Helix</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>listening to</h2>
+    <ul class="tags">
+      <li>Аферист</li>
+      <li>QATSI</li>
+      <li>Painfinder</li>
+      <li>Vein.fm</li>
+      <li>The Dillinger Escape Plan</li>
+      <li>Better Lovers</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>contact</h2>
+    <dl>
+      <dt>github</dt>  <dd><a href="https://github.com/k88-b">k88-b</a></dd>
+      <dt>telegram</dt><dd><a href="https://t.me/gcd_n">@gcd_n</a></dd>
+      <dt>email</dt>   <dd><a href="mailto:kostyan@tuta.io">kostyan@tuta.io</a></dd>
+      <dt>zulip</dt>   <dd><a href="https://leanprover.zulipchat.com/#narrow/dm/1187750-Konstantin-Belyanin">Konstantin Belyanin</a> on Lean Zulip</dd>
+    </dl>
+  </section>
+
+  <footer>gcd(n, 88) = ?</footer>
+
+</main>
+</body>
+</html>
